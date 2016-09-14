@@ -1,16 +1,9 @@
-def haveThree(a):
-    threes = 0
+def countEvens(numbers):
+    evens = 0
+    for number in numbers:
+        if number % 2 == 0:
+            evens = evens + 1
 
-    for(i = 0; i < len(a); i += 1):
-        if (a[i] == 3):
-            threes += 1
-    return threes == 3
+    return evens
 
-
-Print haveThree([3,1,3,1,3])#True
-Print haveThree([3,4,3,4])#False
-
-def sum28(a):
-    for(i = 0; i < len(a); i += 1):
-        if (a[i] == 2):
-            
+print countEvens([1, 2, 3, 4, 5, 6, 7, 8, 9]) #Expect 5
