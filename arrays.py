@@ -34,3 +34,10 @@ def centeredAverage(numbers):
     return (sum - min - max)/(len(numbers) - 2)
 
 print centeredAverage([1, 2, 3, 4, 5, 6, 7, 8, 9]) #Expect 5
+
+def sum13(numbers):
+    sum = 0
+    for number in numbers:
+        if number == 13:
+            sum = sum - 13
+            sum = sum + number

@@ -27,6 +27,7 @@ Given an array length 1 or more of ints, return the difference between the large
 
   print bigDiff([1, 2, 3, 4, 5, 6, 7, 8, 9])# expect 8
   ```
+
 Return the "centered" average of an array of ints, which we'll say is the mean average of the values, except ignoring the largest and smallest values in the array. If there are multiple copies of the smallest value, ignore just one copy, and likewise for the largest value. Use int division to produce the final average. You may assume that the array is length 3 or more.
   ```
   def centeredAverage(numbers):
@@ -43,4 +44,8 @@ Return the "centered" average of an array of ints, which we'll say is the mean a
       return (sum - min - max)/(len(numbers) - 2)
 
   print centeredAverage([1, 2, 3, 4, 5, 6, 7, 8, 9]) #Expect 5
+  ```
+Return the sum of the numbers in the array, returning 0 for an empty array. Except the number 13 is very unlucky, so it does not count and numbers that come immediately after a 13 also do not count.
+  ```
+
   ```
